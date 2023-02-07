@@ -1,7 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import { AppContext } from './Context/AuthProvider';
+import { useContext } from 'react';
 
 function App() {
+  const { user } = useContext(AppContext);
+  console.log(user);
   return (
     <div className="App">
       <header className="App-header">

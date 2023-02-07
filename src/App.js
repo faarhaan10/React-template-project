@@ -2,13 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 import { AppContext } from './Context/AuthProvider';
 import { useContext } from 'react';
+import Main from './Componants/Main/Main';
 
 function App() {
   const { user } = useContext(AppContext);
-  console.log(user);
+  // console.log(user);
   return (
-    <div className="App">
-      <header className="App-header">
+    <>
+      {/* <header className="App-header">
 
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -22,8 +23,9 @@ function App() {
         >
           Learn React
         </a>
-      </header>
-    </div>
+      </header> */}
+      <Main />
+    </ >
   );
 }
 
